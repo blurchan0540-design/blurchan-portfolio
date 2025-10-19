@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>blurChan. | OVERDOSE LAB</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/gh/linecorp/LINE-Seed-Sans-TH/Webfonts/LINESeedSansTH.css" rel="stylesheet">
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'LINE Seed Sans TH','LINESeedSansTH','Sukhumvit Set','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #0b0f18;
+    color: #e6edf7;
+    letter-spacing: 0.4px;
+  }
+  h3 {
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .glass-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  .glass-box:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.18);
+  }
+</style>
+</head>
+
+<body class="relative min-h-screen overflow-x-hidden">
+
+  <!-- 🔹 วิดีโอพื้นหลัง -->
+  <video autoplay loop muted playsinline class="fixed top-0 left-0 w-full h-full object-cover opacity-20 -z-10">
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+  <div class="fixed top-0 left-0 w-full h-full bg-black/40 -z-10"></div>
+
+  <!-- 🎛 HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
+      <h1 class="text-lg font-bold tracking-[-0.07em] uppercase text-white">blurChan.</h1>
+      <nav class="space-x-6 text-sm tracking-[-0.07em] uppercase">
+        <a href="#profile" class="hover:text-blue-400">Profile</a>
+        <a href="#pricing" class="hover:text-blue-400">Pricing</a>
+        <a href="#tos" class="hover:text-blue-400">TOS</a>
+        <a href="#order" class="hover:text-blue-400">Order</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🧬 Profile -->
+  <section id="profile" class="text-center pt-32 pb-16">
+    <div class="flex justify-center mb-5">
+      <div class="relative">
+        <img src="profile.png"
+             alt="blurChan icon"
+             class="w-28 h-28 object-cover rounded-full border-2 border-white/30 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+      </div>
+    </div>
+    <h1 class="text-4xl font-bold uppercase text-white tracking-[-0.07em]">blurChan.</h1>
+    <p class="text-sm mt-2 text-gray-400 leading-relaxed tracking-[0em] uppercase">
+      PV Animator / Visualizer / Lyrics Video from OVERDOSE LAB
+    </p>
+    <div class="mt-6 mx-auto w-24 border-t border-white/10"></div>
+  </section>
+
+  <!-- 💸 COMMISSION PRICING -->
+  <section id="pricing" class="py-16 border-t border-b border-white/10">
+    <h2 class="text-center text-2xl mb-10 font-semibold tracking-[-0.07em] uppercase text-white">COMMISSION PRICING</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+      <div class="glass-box p-6 text-center">
+        <iframe class="w-full h-48 rounded-md mb-4" src="https://www.youtube.com/embed/YeU-rOGg0Cs" allowfullscreen></iframe>
+        <h3>SIMPLE</h3>
+        <p class="text-gray-300 text-sm mt-1">5000+ Bath</p>
+        <ul class="text-xs mt-3 space-y-1 text-gray-400 text-left mx-auto w-fit">
+          <li>- NORMAL TEXT TYPO</li>
+          <li>- NORMAL CAMERA MOVEMENT</li>
+          <li>- 2D MOTION ONLY</li>
+          <li>- ADD 3 OR MORE CHARACTERS [+1500฿]</li>
+        </ul>
+      </div>
+      <div class="glass-box p-6 text-center">
+        <iframe class="w-full h-48 rounded-md mb-4" src="https://www.youtube.com/embed/a1_qvN29fPo" allowfullscreen></iframe>
+        <h3>COMPLEX</h3>
+        <p class="text-gray-300 text-sm mt-1">7000+ Bath</p>
+        <ul class="text-xs mt-3 space-y-1 text-gray-400 text-left mx-auto w-fit">
+          <li>- COMPLEX TEXT TYPO</li>
+          <li>- COMPLEX CAMERA MOVEMENT</li>
+          <li>- 3D MOTION ELEMENT [+5000฿]</li>
+          <li>- ADD 3 OR MORE CHARACTERS [+1500฿]</li>
+        </ul>
+      </div>
+      <div class="glass-box p-6 text-center">
+        <iframe class="w-full h-48 rounded-md mb-4" src="https://www.youtube.com/embed/O0Q4K3pHhgA" allowfullscreen></iframe>
+        <h3>LYRICS VIDEO</h3>
+        <p class="text-gray-300 text-sm mt-1">1000+ Bath</p>
+        <ul class="text-xs mt-3 space-y-1 text-gray-400 text-left mx-auto w-fit">
+          <li>- TITLE LYRICS</li>
+          <li>- ADD TEXT TYPO [ราคาเพิ่มตามความยากง่าย]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-10">
+      <a href="https://www.foriio.com/razmytiye" target="_blank"
+         class="glass-box px-6 py-3 text-sm font-semibold uppercase tracking-[0.05em] text-white hover:text-blue-300">
+        See More My Work
+      </a>
+    </div>
+  </section>
+
+  <!-- TOS -->
+  <section id="tos" class="py-12 text-center">
+    <h2 class="text-2xl mb-6 font-semibold uppercase text-white tracking-[-0.07em]">TERM OF SERVICE</h2>
+    <div class="glass-box max-w-3xl mx-auto p-6 text-sm text-gray-400 leading-relaxed text-left space-y-2">
+      <p>- ราคาอาจมีการเปลี่ยนแปลงได้ (ตามความยากง่ายของงาน)</p>
+      <p>- หากเตรียมงบมาจำกัด สามารถแจ้งหรือสอบถามก่อนได้</p>
+      <p>- แก้ได้ไม่เกิน 3 ครั้ง ถ้าแก้เกินจะมีค่าแก้เพิ่มตามความเหมาะสม</p>
+      <p>- ก่อนเริ่มงานหรือต้องการจองคิว ต้องชำระค่ามัดจำก่อนเริ่ม 50%</p>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section id="order" class="py-12 text-center">
+    <h2 class="text-2xl mb-6 font-semibold uppercase text-white tracking-[-0.07em]">HOW TO ORDER</h2>
+    <div class="glass-box max-w-3xl mx-auto p-6 text-sm text-gray-400 leading-relaxed text-left space-y-2">
+      <p>- รูปภาพประกอบเช่น PROP, BACKGROUND, ART หรืออื่นๆ [PNG,JPG]</p>
+      <p>- ไฟล์เพลง/เสียง [MP3,WAV]</p>
+      <p>- REFERENT หรือตัวอย่าง (ถ้ามี)</p>
+      <p>- กำหนดเดทไลน์ (ถ้ามี)</p>
+      <p>- แจ้งงบประมาณที่เตรียมไว้ (ถ้ามีจำกัด)</p>
+      <p>- รายละเอียดที่จะใส่ เช่น เครดิต หรือข้อความอื่นๆ</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-14 text-center">
+    <h2 class="text-2xl mb-6 font-semibold uppercase text-white tracking-[-0.07em]">CONTACT</h2>
+    <div class="glass-box inline-flex justify-center items-center flex-wrap gap-8 px-6 py-3 text-gray-300">
+      <a href="https://x.com/hayatehochi" target="_blank" class="flex items-center space-x-2 hover:text-blue-400">
+        <i class="fa-brands fa-x-twitter text-xl"></i><span>@hayatehochi</span>
+      </a>
+      <span class="text-gray-600 select-none">|</span>
+      <div class="flex items-center space-x-2">
+        <i class="fa-brands fa-discord text-xl"></i><span>hayatehochi</span>
+      </div>
+      <span class="text-gray-600 select-none">|</span>
+      <a href="mailto:blurchan.contact@gmail.com" class="flex items-center space-x-2 hover:text-blue-400">
+        <i class="fa-solid fa-envelope text-lg"></i><span>blurchan.contact@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative flex flex-col justify-center items-center text-center text-xs text-gray-600 py-10 tracking-[-0.05em] uppercase" style="--footer-offset-y:-70px;">
+    <div class="relative" style="transform: translateY(var(--footer-offset-y));">
+      <div class="flex justify-center items-center mb-4" style="--logo1-size: 40px; --logo2-size: 70px; --logo-gap: 30px;">
+        <img src="logo_blurchan.png" alt="blurChan Logo"
+             class="w-[var(--logo1-size)] h-[var(--logo1-size)] object-contain mx-[calc(var(--logo-gap)/2)] opacity-80 hover:opacity-100 transition">
+        <img src="logo_lab.png" alt="Overdose Lab Logo"
+             class="w-[var(--logo2-size)] h-[var(--logo2-size)] object-contain mx-[calc(var(--logo-gap)/2)] opacity-80 hover:opacity-100 transition">
+      </div>
+      <p>© 2026 blurChan. / OVERDOSE LAB</p>
+    </div>
+  </footer>
+</body>
+</html>
